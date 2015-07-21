@@ -122,4 +122,9 @@ public class MainActivity extends BaseActivity {
         mContentFragment = FeedsFragment.newInstance(category);
         replaceFragment(R.id.content_frame, mContentFragment);
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 }
